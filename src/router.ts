@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-
+import Home from '@/pages/Home.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
     { 
         path: '/',
         name : 'home',
-        component : () => import('@/pages/Home.vue') ,
+        component: Home,      
     },
-     { 
+    { 
         path: '/premium',
         name : 'premium',
         component: () => import('@/pages/Premium.vue'),
@@ -22,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
         path: '/privacy-policy',
         name: 'privacy-policy',
         component : () => import('@/pages/PrivacyPolicy.vue')
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component : () => import('@/pages/Login.vue')
+    },
+     {
+        path: '/sign-up',
+        name: 'sign-up',
+        component : () => import('@/pages/SignUp.vue')
     },
     
     ]

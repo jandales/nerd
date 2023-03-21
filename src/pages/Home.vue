@@ -3,13 +3,14 @@ import Hero from '../components/Hero.vue';
 import Offers from '../components/Offers.vue'
 import Security from '../components/Features.vue';
 import User from '../components/User.vue';
+import Banner from '@/components/Banner.vue';
 </script>
 
 <template>
     <Hero />
     <Offers />
     <Security />
-    <User />
+    <User /> 
 </template>
 
 
