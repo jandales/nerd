@@ -9,8 +9,8 @@ const routes: Array<RouteRecordRaw> = [
         component: Home,      
     },
     { 
-        path: '/premium',
-        name : 'premium',
+        path: '/pricing',
+        name : 'pricing',
         component: () => import('@/pages/Premium.vue'),
     },  
     {

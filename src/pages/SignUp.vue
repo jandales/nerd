@@ -63,7 +63,7 @@ import Logo from '@/assets/logo.png'
    
      
     </form>
-    <a href="/Login" class="block text-center mt-16">Have an account? <span class="text-rose-500">Sign-in</span></a>
+     <RouterLink :to="{ name: 'login' }"  class="block text-center mt-16">Have an account? <span class="text-rose-500">Sign-in</span></RouterLink>>
         </div>
     </div>
 </template>
