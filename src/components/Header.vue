@@ -39,12 +39,12 @@ document.addEventListener('scroll', () => {
                 </svg>                
             </span>
 
-            <div class="flex gap-3 items-center">
+            <RouterLink :to="{ name : 'home'}" class="flex gap-3 items-center">
                 <div class="w-14 h-14  rounded-full bg-rose-500 ml-4 grid place-content-center">
                     <img :src="logo" class="w-8 h-8"  />  
                 </div>
                  <label for="" class="text-2xl break-words block w-32 font-black md:w-auto">Nerd.io</label>
-            </div>
+            </RouterLink>
           
             
 
