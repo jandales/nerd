@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { useTitle } from '@vueuse/core';
 import { RouterLink } from 'vue-router';
+useTitle('Nerd.io | Page not Found')
 </script>
 
 <template>

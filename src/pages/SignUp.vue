@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { useTitle } from '@vueuse/core';
 import Logo from '@/assets/logo.png'
+useTitle('Nerd.io | Sign-up')
 </script>
 <template>
     <div class="w-full min-h-screen bg-slate-50 grid place-content-center pt-20 pb-20">
@@ -63,7 +65,7 @@ import Logo from '@/assets/logo.png'
    
      
     </form>
-     <RouterLink :to="{ name: 'login' }"  class="block text-center mt-16">Have an account? <span class="text-rose-500">Sign-in</span></RouterLink>>
+     <RouterLink :to="{ name: 'login' }"  class="block text-center mt-16">Have an account? <span class="text-rose-500">Sign-in</span></RouterLink>
         </div>
     </div>
 </template>

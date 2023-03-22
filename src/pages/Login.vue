@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Logo from '@/assets/logo.png'
+import { useTitle } from '@vueuse/core';
+useTitle('Nerd.io | Login')
 </script>
 <template>
     <div class="w-full min-h-screen bg-slate-50 grid place-content-center pt-20 pb-20">
@@ -36,7 +38,10 @@ import Logo from '@/assets/logo.png'
             </div>
 
             <div class="flex items-center justify-between mb-4">
-                <input type="checkbox" name="" id="">
+                <div class="flex">
+                    <input type="checkbox" name="" id="">
+                    <label class=" ml-2 inline-block align-baseline font-bold text-sm text-gray-700">Remember me</label>
+                </div>
                 <a class="inline-block align-baseline font-bold text-sm text-rose-500 hover:text-rose-800" href="#">
                     Forgot Password?
                 </a>

@@ -2,7 +2,9 @@
 import Privacy from '@/components/Privacy.vue';
 import { QuestionList, PrivacyList } from '@/data/QuestionList';
 import FairUse from '@/components/FairUse.vue'
+import { useTitle } from '@vueuse/core';
 
+useTitle('Nerd.io | Privacy Policy')
 
 
 

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import QuestionComponent from '@/components/Question.vue';
 import { QuestionList } from '@/data/QuestionList';
+import { useTitle } from '@vueuse/core';
 
-
+useTitle('Nerd.io | FAQ')
 
 
 
