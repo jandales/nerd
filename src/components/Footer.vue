@@ -2,7 +2,7 @@
     
 </script>
 <template>
-    <footer class=" bg-white">
+    <footer class=" bg-slate-50">
         <div class="container mx-auto py-10 flex justify-center items-center">
             <nav class="flex flex-col gap-8">
                 <ul class="flex gap-10">

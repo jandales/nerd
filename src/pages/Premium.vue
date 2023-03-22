@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Banner from '@/components/Banner.vue';
 import StoreWithUs from '@/components/StoreWithUs.vue';
 import PlanLIst from '@/components/plans/PlanLIst.vue';
 </script>
@@ -13,4 +14,5 @@ import PlanLIst from '@/components/plans/PlanLIst.vue';
      </div>
    </section>
    <StoreWithUs /> 
+   <Banner/>
 </template> 

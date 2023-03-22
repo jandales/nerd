@@ -6,18 +6,12 @@ import { computed , onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 import { useRouter } from 'vue-router';
+
+
 const route = useRoute();
 
 
 
-onMounted(() => {
-  console.log(useRoute().name);
-  console.log(useRouter().currentRoute.value.name)
-})
-
-const isAuthPage = computed(() => {
-  console.log(route.name)
-})
 
 
 
@@ -25,12 +19,12 @@ const isAuthPage = computed(() => {
 
 <template>
 
-    <Header></Header>
-    <div  class="pt-20 lg:pt-24 min-h-screen">
+    <Header />
+    <div  class="pt-20 lg:pt-24 min-h-screen"> 
+   
       <router-view></router-view>
-    </div>
-    <Banner />
-    <Footer></Footer>
+    </div> 
+    <Footer />
 
 </template>
 

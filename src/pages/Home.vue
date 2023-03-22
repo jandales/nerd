@@ -11,6 +11,7 @@ import Banner from '@/components/Banner.vue';
     <Offers />
     <Security />
     <User /> 
+    <Banner />
 </template>
 
 

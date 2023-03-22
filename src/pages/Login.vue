@@ -1,10 +1,19 @@
+<script setup lang="ts">
+import Logo from '@/assets/logo.png'
+</script>
 <template>
-    <div class="w-full min-h-screen bg-slate-50 grid place-content-center">
-        <div class="w-[28rem] bg-white rounded-lg p-8">
+    <div class="w-full min-h-screen bg-slate-50 grid place-content-center pt-20 pb-20">
+       <!-- <a href="/">
+           <div class="w-14 h-14 mx-auto  rounded-full bg-rose-500 mb-10 grid place-content-center">
+                <img :src="Logo" class="w-8 h-8"  />  
+            </div>
+       </a> -->
+        <div class="w-full md:w-[28rem] bg-white rounded-lg p-8">
+            
             <h1 class="font-semibold text-xl">
                 Welcome Back!
             </h1>
-            <form class="w-full  mt-8">
+            <form class="w-full mt-8">
 
             <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">

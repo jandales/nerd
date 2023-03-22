@@ -1,10 +1,26 @@
 <script setup lang="ts">
 import HeroImage from '../assets/hero.png'
+import HeroImageSm from '../assets/hero-sm.png'
+import { ref } from 'vue';
+
+
+const handleIsMobile = () => {
+    return window.matchMedia('only screen and (max-width: 768px)').matches;
+}
+
+const isMobile = ref(handleIsMobile());
+
+window.addEventListener('resize', () => {
+    handleIsMobile();
+})
+
+console.log(isMobile);
 </script>
 <template>
-    <section class="container mx-auto min-h-[calc(100vh_-_5rem)]  lg:min-h-screen grid place-content-center">
-        <div class="w-full grid place-content-center lg:place-content-start ">
-            <img :src="HeroImage" alt="hero">
+    <section class="container mx-auto min-h-[calc(100vh_-_5rem)]  lg:min-h-screen grid place-content-center lg:-mt-20">
+        <div class="w-full grid place-content-center lg:place-content-start">
+            <img v-if="isMobile" :src="HeroImageSm" alt="hero">
+             <img v-else :src="HeroImage" alt="hero">
         </div>
         <div class="mt-2">
             <h1 class="text-center text-2xl font-medium lg:text-3xl lg:font-black">Unlimited Cloud Storage</h1>
