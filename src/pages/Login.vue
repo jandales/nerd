@@ -55,7 +55,7 @@ useTitle('Nerd.io | Login')
    
      
     </form>
-    <RouterLink :to="{ name: 'sign-up' }" class="block text-center mt-16">Don't have an account? <span class="text-rose-500">Register</span></RouterLink>>
+    <RouterLink :to="{ name: 'sign-up' }" class="block text-center mt-16">Don't have an account? <span class="text-rose-500">Register</span></RouterLink>
         </div>
     </div>
 </template>
