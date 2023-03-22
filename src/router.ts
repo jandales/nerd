@@ -42,7 +42,7 @@ const routes: Array<RouteRecordRaw> = [
     ]
 
 export default createRouter({
-    history : createWebHistory(),
+    history : createWebHistory('/nerd.io/'),
     routes,
 })
 
